@@ -1,0 +1,1 @@
+This is the first lesson from the Odin Project covering Git, setting up a repository and syncing it up with GitHub. I will also be breaking down a real page and building it using HTML and CSS. 
