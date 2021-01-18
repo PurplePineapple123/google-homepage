@@ -1,0 +1,31 @@
+
+.navbar {
+
+    display: block;
+    width: 100%;
+}
+
+#left-nav {
+
+}
+
+#left-nav li {
+
+    display: inline;
+    float: left;
+    padding-right: 5px;
+    margin-left: 1px;
+
+}
+
+#right-nav {
+
+
+}
+
+#right-nav li {
+    display: inline;
+    float: right;
+    padding-left: 5px;
+    margin-right: 10px;
+}
