@@ -1,31 +1,35 @@
 
 .navbar {
 
-    display: block;
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 #left-nav {
 
 }
 
+
 #left-nav li {
 
-    display: inline;
-    float: left;
-    padding-right: 5px;
-    margin-left: 1px;
+    display: inline-flex;
+    padding: 5px;
 
 }
 
-#right-nav {
 
+#right-nav {
+    margin-right: 50px;
 
 }
 
 #right-nav li {
-    display: inline;
-    float: right;
-    padding-left: 5px;
-    margin-right: 10px;
+
+    display: inline-flex;
+    padding: 5px;
+
 }
