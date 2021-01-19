@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-
+/* Begin Navbar CSS */
 
 .navbar {
 
@@ -54,4 +54,59 @@
         text-align: center;
         text-decoration: none;
         display: inline-flex;      
+}
+
+/* End of Navbar CSS */
+
+/* Begining of Main Body CSS (Google image, searchbar and buttons)  */
+
+.grid-container {
+
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 20px;
+
+}
+
+.google-image {
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(58, 157, 238);
+    margin: auto;
+
+}
+
+.search-bar {
+    grid-column-start: 1;
+    grid-column-end: 4;
+        background-color: rgb(58, 157, 238);
+
+
+}
+
+.left-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+
+}
+
+.left-button-styling {
+
+
+}
+
+.right-button {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: auto;
+}
+
+.right-button-styling {
+
+    
 }
