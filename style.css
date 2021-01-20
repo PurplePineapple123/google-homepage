@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font: arial;
+
   }
 
 /* Begin Navbar CSS */
@@ -64,8 +66,10 @@
 .grid-container {
 
     display: grid;
-    justify-content: center;    
-    margin-top: 5%;
+    justify-content: center;  
+    margin-top: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
     grid-template-columns: 300px 300px;
     grid-template-rows: 100px 50px 50px;
     row-gap: 20px;
@@ -91,7 +95,7 @@
     border-style: solid;
     border-radius: 500px; 
 
-    border-color: rgb(151, 151, 151);
+    border-color: #dfe1e5;
 
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"), url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png");
     background-size: 20px, 15px;
@@ -220,3 +224,76 @@
     
 
 }
+
+/* Begin footer content */
+
+
+
+
+.footer {
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    padding: 5px;
+}
+
+#left-footer {
+    margin-left: 25px;
+
+}
+
+
+#left-footer li {
+
+    display: inline-flex;
+    padding: 5px;
+    
+
+}
+
+
+#right-footer {
+    margin-right: 50px;
+
+}
+
+#right-footer li {
+
+    display: inline-flex;
+    padding: 5px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+    .footer {
+
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        bottom: 0;
+        background-color: red;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+
+        #left-footer {
+            margin: auto;
+    
+        } 
+
+        #right-footer {
+            margin: auto;
+        
+        }    
+
+        
+  }
