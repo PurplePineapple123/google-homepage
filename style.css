@@ -97,6 +97,8 @@
     background-size: 20px, 15px;
     background-position: 3% 45%, 96% 45%;
     background-repeat: no-repeat;
+    cursor: pointer;
+
     
    
 }
@@ -104,41 +106,94 @@
 .left-button {
     grid-column-start: 1;
     grid-column-end: 2; 
-    background-color: rgb(58, 157, 238);
     position: absolute;
-    margin-top: 75%;
-    margin-left: 50%;
+    margin-top: 65%;
+    margin-left: 55%;
 
 
 }
 
 .left-button-styling {
-    background-color: #479cd4;
-    border: none;
-    color: white;
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
+
+
+    background-color: #f2f2f2;
+    font-family: arial;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    font-size: 14px;
+    cursor: pointer;
+
+    
 }
+
+.left-button-styling:hover {
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+
+    background-color: #f8f8f8;
+    font-family: arial;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #c6c6c6;
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+    
+}
+
 
 .right-button {
     grid-column-start: 2;
     grid-column-end: 3; 
-    background-color: rgb(58, 157, 238);
     position: absolute;
-    margin-top: 75%;
+    margin-top: 65%;
     margin-right: 50%;
 
 }
 
 .right-button-styling {
-    background-color: #479cd4;
-    border: none;
-    color: white;
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
 
+    background-color: #f2f2f2;
+    font-family: arial;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+.right-button-styling:hover {
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+
+    background-color: #f8f8f8;
+    font-family: arial;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #c6c6c6;
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+    
 }
 
 .search-bar input[type=text] {
@@ -150,8 +205,9 @@
 
     margin: auto;
     border-style: none;
+    background-color: transparent;
     width: 80%;
-    height: 35px;
+    height: 100%;
     align-items: center;
     padding: 0px;
 
