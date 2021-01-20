@@ -66,7 +66,7 @@
     display: grid;
     justify-content: center;    
     margin-top: 5%;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 300px 300px;
     grid-template-rows: 100px 50px 50px;
     row-gap: 20px;
     position: relative;
@@ -86,7 +86,19 @@
     grid-column-end: 3;
     margin-right: 2%;
     margin-left: 2%;
+    display: flex;
     
+    border-style: solid;
+    border-radius: 500px; 
+
+    border-color: rgb(151, 151, 151);
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"), url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png");
+    background-size: 20px, 15px;
+    background-position: 3% 45%, 96% 45%;
+    background-repeat: no-repeat;
+    
+   
 }
 
 .left-button {
@@ -131,19 +143,20 @@
 
 .search-bar input[type=text] {
 
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png");
+  /*   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png");
     background-size: 20px;
     background-position: 3% 45%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 
-    border-radius: 500px;
-    border-color: rgb(201, 201, 201);
-    width: 100%;
-    height: 35px;
     margin: auto;
-    
+    border-style: none;
+    width: 80%;
+    height: 35px;
+    align-items: center;
+    padding: 0px;
 
 }
+
 
 .search-bar input[type=text]:focus {
 
