@@ -77,7 +77,6 @@
 
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: rgb(58, 157, 238);
     margin: auto;
 
 }
@@ -85,10 +84,9 @@
 .search-bar {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: rgb(58, 157, 238);
-    justify-content: center;    
+    margin-right: 2%;
+    margin-left: 2%;
     
-
 }
 
 .left-button {
@@ -128,16 +126,28 @@
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-flex;   
 
 }
 
 .search-bar input[type=text] {
 
-    background: white;
-    border-radius: 50px;
-    border-color: black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png");
+    background-size: 20px;
+    background-position: 3% 45%;
+    background-repeat: no-repeat;
+
+    border-radius: 500px;
+    border-color: rgb(201, 201, 201);
     width: 100%;
     height: 35px;
+    margin: auto;
+    
+
+}
+
+.search-bar input[type=text]:focus {
+
+    outline: 0px;
+    
 
 }
