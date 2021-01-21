@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font: arial;
+    color: #5F6368;
 
   }
 
@@ -26,7 +27,7 @@
 #left-nav li {
 
     display: inline-flex;
-    padding: 5px;
+    padding: 8px;
 
 }
 
@@ -43,7 +44,7 @@
 #right-nav li {
 
     display: inline-flex;
-    padding: 5px;
+    padding: 8px;
 
 }
 
@@ -54,11 +55,12 @@
 
 
 .button1 {
-        background-color: #479cd4;
+        background-color: #4483ed;
         border: none;
         color: white;
         padding: 5px 15px;
         text-align: center;
+        text-decoration: strong;
         text-decoration: none;
         display: inline-flex;      
 }
@@ -71,15 +73,29 @@
 
     display: grid;
     justify-content: center;  
-    margin-top: 10%;
+    margin-top: 12%;
     margin-right: 2%;
     margin-left: 2%;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: minmax(50px, 300px) minmax(50px, 300px);
     grid-template-rows: 100px 50px 50px;
     row-gap: 20px;
     position: relative;
 
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    
+
+    .grid-container {
+
+        margin-top: 20%;
+    }    
+
+        
+  }
+
 
 .google-image {
 
@@ -92,10 +108,7 @@
 .search-bar {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-right: 2%;
-    margin-left: 2%;
-    display: flex;
-    
+    display: inline-flex;
     border-style: solid;
     border-radius: 500px; 
 
@@ -106,7 +119,7 @@
     background-position: 3% 45%, 96% 45%;
     background-repeat: no-repeat;
     cursor: pointer;
-
+    
     
    
 }
@@ -114,14 +127,17 @@
 .left-button {
     grid-column-start: 1;
     grid-column-end: 2; 
-    position: absolute;
-    margin-top: 65%;
-    margin-left: 55%;
 
 
 }
 
 .left-button-styling {
+   
+    float: right;
+    margin-right: 5px;
+
+
+
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
@@ -162,13 +178,14 @@
 .right-button {
     grid-column-start: 2;
     grid-column-end: 3; 
-    position: absolute;
-    margin-top: 65%;
-    margin-right: 50%;
-
+    
 }
 
 .right-button-styling {
+    float: left;
+    margin-left: 5px;
+    
+   
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
@@ -243,7 +260,7 @@
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    background-color: red;
+    background-color: #f2f2f2;
     padding: 5px;
 }
 
@@ -284,7 +301,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         bottom: 0;
-        background-color: red;
+        background-color: #f2f2f2;
         padding: 5px;
         overflow-x: hidden;
     }
@@ -300,4 +317,9 @@
         }    
 
         
+  }
+
+  li:hover {
+    text-decoration: underline;
+
   }
