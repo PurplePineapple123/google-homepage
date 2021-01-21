@@ -14,6 +14,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #left-nav {
@@ -31,8 +32,11 @@
 
 
 #right-nav {
+    display: inline-flex;
     margin-top: 10px;
     margin-right: 50px;
+    align-items: center;
+    overflow: hidden;
 
 }
 
@@ -45,9 +49,9 @@
 
 #right-nav img {
     display: inline-flex;
-    max-width: 25px;
-
+    max-width: 20px;
 }
+
 
 .button1 {
         background-color: #479cd4;
